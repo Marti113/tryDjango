@@ -7,6 +7,7 @@ def home_view(request, *args, **kwargs):
     my_context = {
         "my_text": "This is about me",
         "my_number": 123,
-        "my_list" : [13, 31, 71]
+        "my_list" : [13, 31, 71],
+        "this is true": True
     }
     return render(request, "home.html", my_context)
