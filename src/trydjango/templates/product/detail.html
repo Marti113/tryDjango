@@ -1,5 +1,7 @@
 {% extends 'base.html'%}
 
 {% block content %}
-<h1>Item</h1>
+<h1>{{obj.title}}</h1>
+#might need if/else statement here to handle null description
+<p>{{obj.description}}</p>
 {% endblock %}
